@@ -34,7 +34,6 @@ public class SeleniumUtility extends BaseSetup {
     public void sendText(By locator, String value) {
         LOGGER.info("Clearing And Sending text {} to locator {}", value, locator);
         waitForVisibilityOf(locator).sendKeys(value);
-
     }
 
     public String getElementText(By locator) {
@@ -78,5 +77,4 @@ public class SeleniumUtility extends BaseSetup {
         TakesScreenshot takesScreenshot = (TakesScreenshot) getDriver();
         return takesScreenshot.getScreenshotAs(OutputType.BYTES);
     }
-
 }
