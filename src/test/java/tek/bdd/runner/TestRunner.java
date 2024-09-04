@@ -36,7 +36,7 @@ import org.junit.runner.RunWith;
 
         // Configures the format and location of the test reports.
         // 'html:target/cucumber-report/report.html' generates an HTML report at the specified path.
-        // 'pretty' outputs the test results in a readable format to the console.
+        // 'Pretty' outputs the test results in a readable format to the console.
         plugin = {
                 "html:target/cucumber-report/report.html",
                 "pretty"

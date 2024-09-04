@@ -9,7 +9,6 @@ import tek.bdd.browsers.EdgeBrowser;
 import tek.bdd.browsers.FireFoxBrowser;
 import tek.bdd.exceptions.ExceptionsHandling;
 import tek.bdd.utilities.Constants;
-
 import java.io.File;
 import java.io.FileInputStream;
 import java.io.IOException;
@@ -66,7 +65,6 @@ public abstract class BaseSetup {
 
         LOGGER.info("Running on browser {}", browserType);
         LOGGER.info("Is Headless ON {}", isHeadless);
-
         BaseBrowser browser;
 
         // Instantiate the appropriate browser based on the configuration
