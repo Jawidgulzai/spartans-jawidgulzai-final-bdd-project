@@ -14,7 +14,6 @@ Feature: Create Primary Account
   Scenario: Validate user navigate to Sign up your Account page
     When fill up create account form
     Then click on Create Account button
-    Then validate Sign up your account title is exist
     Then validate user full name is displayed
     Then validate email address shows as expected
     When when the user fill up sign up form

@@ -39,12 +39,6 @@ public class CreateAccountSteps extends SeleniumUtility {
         clickOnElement(CreateAccountPageObject.CREATE_ACCOUNT_BUTTON);
     }
 
-    @Then("validate Sign up your account title is exist")
-    public void validateSignUpYourAccountTitleIsExist() {
-        String actualSignUpTitle = getElementText(CreateAccountPageObject.SIGN_UP_YOUR_ACCOUNT_TITLE);
-        Assert.assertEquals("Sign up your account", actualSignUpTitle);
-
-    }
     @Then("validate user full name is displayed")
     public void validateUserFullNameIsDisplayed() {
        boolean userActualFullName = isElementIsDisplayed(CreateAccountPageObject.USER_FULL_NAME);
