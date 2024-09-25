@@ -1,4 +1,4 @@
-@Regression @Smoke @HomePage.feature
+@Regression @Smoke
 Feature: Validate home page title is exist
 
   @Home_Page_Scenario_1
