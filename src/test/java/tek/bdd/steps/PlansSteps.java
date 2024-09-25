@@ -5,7 +5,6 @@ import org.junit.Assert;
 import org.openqa.selenium.WebElement;
 import tek.bdd.pages.PlansPageObject;
 import tek.bdd.utilities.SeleniumUtility;
-
 import java.util.List;
 
 public class PlansSteps extends SeleniumUtility {
