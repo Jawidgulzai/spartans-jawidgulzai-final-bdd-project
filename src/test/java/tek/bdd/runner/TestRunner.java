@@ -26,20 +26,11 @@ import org.junit.runner.RunWith;
         // Setting this to 'false' means that tests will be executed.
         dryRun = false,
 
-        // When 'monochrome' is set to 'true', the console output will be plain text without color codes.
-        // This makes the output easier to read, especially in environments where color is not supported.
-        monochrome = true,
-
-        // Specifies the naming convention for generated step definition methods.
-        // 'CAMELCASE' will generate method names in camel case (e.g., 'thisIsAStep').
-        snippets = CucumberOptions.SnippetType.CAMELCASE,
-
         // Configures the format and location of the test reports.
         // 'html:target/cucumber-report/report.html' generates an HTML report at the specified path.
         // 'Pretty' outputs the test results in a readable format to the console.
         plugin = {
                 "html:target/cucumber-report/report.html",
-                "pretty",
                 "json:target/jsonReport/report.json"
 
         }
