@@ -14,14 +14,12 @@ public class AccountsSteps extends SeleniumUtility {
     @Then("click on Accounts button")
     public void clickOnAccountsButton() {
         clickOnElement(AccountsPageObject.ACCOUNTS_BUTTON);
-
     }
 
     @Then("validate Primary Accounts title is exist")
     public void validatePrimaryAccountsTitleIsExist() {
         String actualPrimaryAccountsTitle = getElementText(AccountsPageObject.PRIMARY_ACCOUNT_TITLE);
         Assert.assertEquals("Primary Accounts", actualPrimaryAccountsTitle);
-
     }
 
     @Then("validate table row count to be {int}")
